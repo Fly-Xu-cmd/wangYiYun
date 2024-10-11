@@ -1,0 +1,134 @@
+.player-content {
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.player-content .player-album-cover {
+  height: 100%;
+  width: 40%;
+}
+
+.player-content .player-album-cover .ablum {
+  background: url("../images/singlecover.png");
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  position: relative;
+}
+
+.player-content .player-album-cover .ablum .cover {
+  width: 65%;
+  height: 65%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 18%;
+  left: 18%;
+  box-shadow: 0 0 5px 5px #222;
+}
+
+.player-content .player-album-cover .ablum img {
+  width: 100%;
+  height: 100%;
+}
+
+.player-content .player-album-cover .ablum .cover.running {
+  animation: imgRotate 30s linear infinite;
+}
+
+@keyframes imgRotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.player-content .player-lyric {
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.player-lyric .song-name {
+  flex-grow: 1;
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.player-lyric .song-info {
+  margin: 5px 0;
+}
+
+.player-lyric .song-info>span {
+  margin-right: 10px;
+}
+
+.player-lyric .lyric-wrap {
+  height: 350px;
+  width: 90%;
+  overflow-y: scroll;
+  margin-top: 10px;
+}
+
+.player-lyric .lyric-wrap .song-lyric-item {
+  width: 100%;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.player-background-image {
+  margin-top: -10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+}
+
+.player-lyric {
+  color: #e6e6e6;
+}
+
+.player-lyric .lyric-wrap .song-lyric-item.active {
+  color: rgba(21, 218, 14, .7);
+}
+
+/* 播放列表 */
+.player-list-div {
+  width: 45%;
+  height: 102%;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  padding-left: 10px;
+  background-color: #f6f6f8;
+  z-index: 999;
+  overflow: scroll;
+
+}
+
+.player-list-div .player-list-header {
+  display: block;
+  font-size: 18px;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: #ccc solid 1px;
+}
+
+.player-list-div .player-list-ul {
+  padding-top: 10px;
+}
+
+.player-list-li {
+  margin: 10px 0;
+}
+
+.player-list-li>div {
+  margin-left: 10px;
+}

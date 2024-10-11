@@ -1,0 +1,329 @@
+/* home.css */
+.wrapper {
+  background-color: #eee;
+  width: 950px;
+  margin: 0 auto;
+}
+
+.wrapper .header {
+  /* margin-bottom: 10px; */
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  background-color: #2bb669;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.wrapper .content {
+  width: 100%;
+  position: relative;
+  min-height: 580px;
+  margin-top: 10px;
+}
+
+.wrapper .player-control {
+  background-color: #f6f6f8;
+  height: 65px;
+  width: 100%;
+}
+
+.w {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.carousel-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+.carousel-control {
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 50%;
+  border: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2021;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
+
+.carousel-control-left {
+  left: 10px;
+}
+
+.carousel-control-right {
+  right: 10px;
+}
+
+.carousel-control-hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.carousel-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+.carousel-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.carousel-item>img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.carousel-indicators>li {
+  width: 50px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 15px 2px;
+  cursor: pointer;
+
+}
+
+.carousel-indicators>.active {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.recommend-playlist {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.recommend-playlist-header {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.recommend-playlist-container {
+  width: 100%;
+}
+
+.recommend-playlist-item {
+  width: 18%;
+}
+
+.recommend-playlist-cover {
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0;
+}
+
+.recommend-playlist-cover>img {
+  width: 100%;
+  height: auto;
+  font-size: 0;
+}
+
+.recommend-playlist-cover .recommend-playlist-icon {
+  opacity: 0;
+  position: absolute;
+  bottom: 10px;
+  right: 5px;
+  color: #ccc;
+  font-size: 20px;
+  /* 新增 */
+  transition: opacity 0.2s linear;
+}
+
+.hover .recommend-playlist-icon {
+  opacity: 1;
+}
+
+.recommend-playlist-title {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.wrapper .player-control {
+  background-color: #f6f6f8;
+  height: 65px;
+  width: 100%;
+  display: flex;
+}
+
+.player-control-songinfo {
+  width: 15%;
+  margin-left: 10px;
+  min-height: 80%;
+}
+
+.player-control-unit {
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.player-control-songinfo .img {
+  width: 50%;
+  height: 100%;
+  overflow: auto;
+  border-radius: 5px;
+  font-size: 0;
+}
+
+.player-control-songinfo .img>img {
+  width: 100%;
+  height: 100%;
+}
+
+.player-control-songinfo .songinfo {
+  width: 50%;
+}
+
+.player-control-songinfo .songinfo>span {
+  margin: 4px;
+  margin-left: 6px;
+  width: 100%;
+}
+
+.player-control-songinfo .songinfo>.songname {
+  font-size: 16px;
+}
+
+.player-control-songinfo .songinfo>.singer {
+  font-size: 14px;
+}
+
+.player-control-unit .control {
+  font-size: 35px;
+}
+
+.player-control-unit .list {
+  font-size: 25px;
+}
+
+.player-control-unit .song-progress .current-time {
+  margin-right: 5px;
+}
+
+.player-control-unit .song-progress .total-time {
+  margin-left: 5px;
+}
+
+.player-control-unit .volume {
+  margin-left: 20px;
+}
+
+.player-control-unit .volume .volume-icon {
+  margin-right: 5px;
+}
+
+.player-control-unit .progress {
+  height: 4px;
+  background-color: #ccc;
+  position: relative;
+}
+
+.player-control-unit #progress-bar {
+  width: 350px;
+}
+
+.player-control-unit #volume-bar {
+  width: 50px;
+}
+
+.player-control-unit .progress .progress-bar {
+  position: absolute;
+  width: 0;
+  height: 4px;
+  background-color: #4dc376;
+}
+
+.player-control-unit .progress .progress-dot {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4dc376;
+}
+
+.carousel-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+  /* 新加的属性，调试过程中可先不加 */
+  overflow: hidden;
+}
+
+/* 新加的属性 */
+.carousel-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 修改样式 */
+.recommend-playlist-cover img {
+  width: 100%;
+  height: auto;
+  font-size: 0;
+  /* 新增 */
+  transition: transform 0.2s linear;
+}
+
+/* 新增样式:图片伸缩 */
+.hover .recommend-playlist-cover img {
+  transform: scale(1.1);
+}
+
+/* 播放列表 */
+.player-list-div {
+  width: 45%;
+  height: 102%;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  padding-left: 10px;
+  background-color: #f6f6f8;
+  z-index: 999;
+  overflow: scroll;
+
+}
+
+.player-list-div .player-list-header {
+  display: block;
+  font-size: 18px;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: #ccc solid 1px;
+}
+
+.player-list-div .player-list-ul {
+  padding-top: 10px;
+}
