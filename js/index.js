@@ -15,7 +15,6 @@ import { homePage } from "./home/home.js";
 import { recommendListPage } from "./recommendList/recommendList.js";
 import { reactive } from "./util/reactive.js"
 import { playerPage } from "./playser/player.js";
-import { PlayerCoverBackMode } from "./home/control.js"
 
 //路由表
 const routers = [
